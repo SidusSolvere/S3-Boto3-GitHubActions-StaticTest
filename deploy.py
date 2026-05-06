@@ -4,7 +4,7 @@ import os
 import mimetypes
 
 # 1. Tell the script which bucket to use
-BUCKET_NAME = os.environ.get('boto-3-bucket-test')
+BUCKET_NAME = os.environ.get('AWS_S3_BUCKET')
 
 s3 = boto3.client('s3')
 
